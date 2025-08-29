@@ -1,11 +1,12 @@
 import { Card, CardContent, CardFooter, CardHeader } from "../ui/card";
+import CardHeaderText from "../common/CardHeaderText";
 import { Progress } from "../ui/progress";
 
 const LimitationCard = ({ cardHeading = "Daily Limit" }) => {
   return (
     <Card className="w-full gap-2">
       <CardHeader>
-        <p className="font-bold text-lg">{cardHeading}</p>
+        <CardHeaderText heading={cardHeading} />
       </CardHeader>
       <CardContent className="flex justify-between">
         <p className="text-sm">

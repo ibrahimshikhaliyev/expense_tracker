@@ -1,20 +1,15 @@
 import React from "react";
-import {
-  Card,
-  CardContent,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "../ui/card";
+import { Card, CardContent, CardFooter, CardHeader } from "../ui/card";
 import StaticsDateSelect from "./StatisticsDateSelect";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "../ui/tabs";
 import { ChartPieDonutText } from "../ui/donut-chart";
+import CardHeaderText from "../common/CardHeaderText";
 
 const StatisticsCard = () => {
   return (
     <Card className="w-full max-w-sm">
       <CardHeader className="flex flex-row justify-between items-center">
-        <CardTitle>Statistics</CardTitle>
+        <CardHeaderText heading={"Statistics"} />
         <StaticsDateSelect />
       </CardHeader>
       <CardContent>
