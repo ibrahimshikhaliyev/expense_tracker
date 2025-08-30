@@ -2,15 +2,10 @@ import React from "react";
 import { Card, CardContent, CardFooter, CardHeader } from "../ui/card";
 
 import { Badge } from "../ui/badge";
-import { TotalSumDisplayCardTypes } from "@/types/TotalSumDisplayCardTypes";
 import { BanknoteArrowUpIcon } from "lucide-react";
+import { TotalSumDisplayCardTypes } from "@/types/expenses";
 
-const TotalSumDisplayCard = ({
-  title,
-  badgeColor,
-  id,
-  type,
-}: TotalSumDisplayCardTypes) => {
+const TotalSumDisplayCard = ({ title, amount }: TotalSumDisplayCardTypes) => {
   return (
     <Card className="w-full gap-2">
       <CardHeader>
@@ -21,11 +16,11 @@ const TotalSumDisplayCard = ({
         </div>
       </CardHeader>
       <CardContent className="flex flex-col justify-between gap-2">
-        <Badge variant="secondary" className="bg-[#BCF49D] h-4 text-xs">
+        <Badge variant="secondary" className="bg-[#BCF49D] w-fit h-4 text-xs">
           +17.2%
         </Badge>
         <div>
-          <p className="text-xl font-bold">$78.000</p>
+          <p className="text-xl font-bold"> {amount} ₼</p>
         </div>
       </CardContent>
       <CardFooter>

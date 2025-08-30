@@ -1,5 +1,5 @@
 //API BASE URL
-export const BASE_URL = "https://68b1ba9fa860fe41fd5f6900.mockapi.io/";
+export const BASE_URL = "https://68b1ba9fa860fe41fd5f6900.mockapi.io";
 
 //SIDEBAR MENUS
 
@@ -57,15 +57,15 @@ export const totalCardsData = [
     badgeColor: "",
   },
   {
-    title: "Total Expense",
-    type: "expense",
+    title: "Total Outcome",
+    type: "outcome",
     id: 2,
     icon: BanknoteArrowDownIcon,
     badgeColor: "",
   },
   {
-    title: "Total Savings",
-    type: "savings",
+    title: "Balance",
+    type: "balance",
     id: 3,
     icon: HandCoinsIcon,
     badgeColor: "",
@@ -92,9 +92,9 @@ export const months = [
 export const recentTransactionsData = {
   headings: [
     { id: 5, heading: "№", key: "number", className: "w-[50px]" },
-    { id: 1, heading: "Invoice", key: "invoice", className: "w-[100px]" },
-    { id: 2, heading: "Status", key: "status", className: "" },
-    { id: 3, heading: "Method", key: "method", className: "" },
+    { id: 1, heading: "Name", key: "name", className: "w-[100px]" },
+    { id: 2, heading: "Type", key: "type", className: "" },
+    { id: 3, heading: "Category", key: "category", className: "" },
     { id: 4, heading: "Amount", key: "amount", className: "text-right" },
   ],
   data: [
